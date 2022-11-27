@@ -1,20 +1,35 @@
-.geral {
-    position: relative;
-    width: 1440px;
-    height: 1024px;
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 
     background: #FAFAFA;
 }
 
+/*.geral {
+    position: relative;
+    width: 1080px;
+    height: 720px;
+
+    background: #FAFAFA;
+}*/
+
+/* tudo relativo à barra de navegação*/
 .navbar {
+    z-index: 10;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 40px 114px;
-    gap: 540px;
+    gap: 15px;
 
-    position: absolute;
+    position: fixed;
     height: 199px;
     left: 0%;
     right: 0%;
@@ -26,8 +41,9 @@
 }
 
 #sorvete {
-    width: 15vh;
-    height: 24vh;
+    display: flex;
+    width: 80%;
+    height: 50%;
 
     /* background: #FF9AC4; */
 
@@ -43,8 +59,9 @@
     padding: 8px 16px;
     gap: 16px;
 
-    width: 450px;
-    height: 61px;
+    width: 150px;
+    height: 20%;
+    padding-right: 200px;
 
     background: #FFFFFF;
     border: 0.5px solid rgba(96, 96, 96, 0.3);
@@ -83,15 +100,229 @@
     flex-grow: 0;
 }
 
+/*relativo aos produtos e seus cards*/
 .card {
+    position: relative;
+    width: 70%;
+    height: 50%;
+    left: 114px;
+    top: 279px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.minion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 31px;
+
     position: absolute;
-    width: 1212px;
+    width: 240px;
+    height: 240px;
+    left: 1086px;
+    top: 551px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+}
+
+.morango {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 31px;
+    
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    left: 1086px;
+    top: 279px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+}
+
+.chicabon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 31px;
+
+    position: absolute;
+    width: 318px;
+    height: 512px;
+    left: 736px;
+    top: 279px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+}
+
+.azul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 31px;
+    
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    left: 464px;
+    top: 551px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+}
+
+.brigadeiro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 31px;
+    
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    left: 464px;
+    top: 279px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+}
+
+.tablito {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 31px;
+    
+    position: absolute;
+    width: 318px;
     height: 512px;
     left: 114px;
     top: 279px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
 }
 
-.footer {
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    
+    width: 270px;
+    height: 87px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.preços {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 10px;
+    
+    width: 103px;
+    height: 45px;
+    
+    background: rgba(249, 199, 191, 0.5);
+    border-radius: 8px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.textnome {
+    width: 270px;
+    height: 39px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    
+    
+    color: #292929;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.textdesc {
+    width: 270px;
+    height: 40px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    
+    color: #606060;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.textpreço {
+    width: 89px;
+    height: 29px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/*relativo ao footer e seus componentes*/
+footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -99,11 +330,12 @@
     padding: 48px 114px;
     gap: 292px;
 
-    position: absolute;
+    position: static;
     height: 155.02px;
     left: 0%;
     right: 0%;
     bottom: 0px;
+    margin-top: 900px;
 
     background: #F2F2F2;
 }
