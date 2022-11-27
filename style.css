@@ -265,7 +265,7 @@ body {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 18px;
     line-height: 39px;
     /* identical to box height */
     
@@ -288,7 +288,7 @@ body {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 10px;
     line-height: 20px;
     
     color: #606060;
@@ -302,14 +302,14 @@ body {
 }
 
 .textpreço {
-    width: 89px;
+    width: 95px;
     height: 29px;
     
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 14px;
+    line-height: 5px;
     
     color: #000000;
     
