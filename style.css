@@ -42,8 +42,8 @@ body {
 
 #sorvete {
     display: flex;
-    width: 80%;
-    height: 50%;
+    width: 180px;
+    height: 150px;
 
     /* background: #FF9AC4; */
 
@@ -102,13 +102,11 @@ body {
 
 /*relativo aos produtos e seus cards*/
 .card {
-    position: relative;
-    width: 70%;
-    height: 50%;
+    position: absolute;
+    width: 300px;
+    height: 200px;
     left: 114px;
-    top: 279px;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    top: 159px;    
 }
 
 .minion {
@@ -330,12 +328,123 @@ footer {
     padding: 48px 114px;
     gap: 292px;
 
-    position: static;
-    height: 155.02px;
+    position: relative;
+    min-width: 1400px;
+    max-width: 100%;
+    height: 15%;
     left: 0%;
     right: 0%;
     bottom: 0px;
-    margin-top: 900px;
+    margin-top: 90%;
 
     background: #F2F2F2;
+}
+
+.frame1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15px;
+    
+    width: 253px;
+    height: 35px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.linkedin {
+    width: 35px;
+    height: 35px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.facebook {
+    width: 35px;
+    height: 35px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.twitter {
+    width: 35px;
+    height: 35px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.frame2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    
+    width: 60px;
+    height: 59.02px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.sorvetefooter {
+    display: flex;
+    width: 100px;
+    height: 95px;
+
+    /*background: #FF9AC4;*/
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.textfooter {
+    width: 253px;
+    height: 17px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 17px;
+    /* identical to box height */
+    
+    
+    color: #707070;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;
 }
