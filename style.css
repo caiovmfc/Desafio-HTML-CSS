@@ -11,14 +11,6 @@ body {
     background: #FAFAFA;
 }
 
-/*.geral {
-    position: relative;
-    width: 1080px;
-    height: 720px;
-
-    background: #FAFAFA;
-}*/
-
 /* tudo relativo à barra de navegação*/
 .navbar {
     z-index: 10;
@@ -30,7 +22,7 @@ body {
     gap: 15px;
 
     position: fixed;
-    height: 199px;
+    height: 120px;
     left: 0%;
     right: 0%;
     top: 0px;
@@ -100,13 +92,13 @@ body {
     flex-grow: 0;
 }
 
-/*relativo aos produtos e seus cards*/
+/*relativo aos sorvetes e seus cards*/
 .card {
     position: absolute;
     width: 300px;
     height: 200px;
-    left: 114px;
-    top: 159px;    
+    left: 154px;
+    top: 29px;    
 }
 
 .minion {
@@ -335,7 +327,7 @@ footer {
     left: 0%;
     right: 0%;
     bottom: 0px;
-    margin-top: 1200px;
+    top: 950px;
 
     background: #F2F2F2;
 }
@@ -447,30 +439,9 @@ footer {
     order: 2;
     flex-grow: 0;
 }
-/*
-@media (max-width: 1400px) {
-    footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 48px 114px;
-        gap: 292px;
-    
-        position: relative;
-        min-width: 1400px;
-        max-width: 100%;
-        height: 15%;
-        left: 0%;
-        right: 0%;
-        bottom: 0px;
-        margin-top: 1100px;
-    
-        background: #F2F2F2;
-    }
-}*/
 
-@media (max-width: 650px) {
+/* MOBILE */
+@media (max-width: 700px) {
     html {
         height: 100%;
         min-height: 100%;
@@ -486,6 +457,7 @@ footer {
     background: #FAFAFA;
     }
 
+    /* alterações navbar*/
     .searchfield {
 
     display: flex;
@@ -519,115 +491,116 @@ footer {
         top: 159px;    
     }
 
+    /*alterações cards sorvetes*/
+    .minion {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 31px;
 
-.minion {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 31px;
+        position: relative;
+        width: 240px;
+        height: 240px;
+        left: 116px;
+        top: 1138px;
 
-    position: relative;
-    width: 240px;
-    height: 240px;
-    left: 116px;
-    top: 1138px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+        border-radius: 16px;
+    }
 
-    background: #FFFFFF;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
-    border-radius: 16px;
-}
+    .morango {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 31px;
+        
+        position: relative;
+        width: 240px;
+        height: 240px;
+        left: 116px;
+        top: 554px;
+        
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+        border-radius: 16px;
+    }
 
-.morango {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 31px;
-    
-    position: relative;
-    width: 240px;
-    height: 240px;
-    left: 116px;
-    top: 554px;
-    
-    background: #FFFFFF;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
-    border-radius: 16px;
-}
+    .chicabon {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 31px;
 
-.chicabon {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 31px;
+        position: relative;
+        width: 318px;
+        height: 512px;
+        left: 430px;
+        top: 289px;
 
-    position: relative;
-    width: 318px;
-    height: 512px;
-    left: 430px;
-    top: 289px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+        border-radius: 16px;
+    }
 
-    background: #FFFFFF;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
-    border-radius: 16px;
-}
+    .azul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 31px;
+        
+        position: absolute;
+        width: 240px;
+        height: 240px;
+        left: 504px;
+        top: 556px;
+        
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+        border-radius: 16px;
+    }
 
-.azul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 31px;
-    
-    position: absolute;
-    width: 240px;
-    height: 240px;
-    left: 504px;
-    top: 556px;
-    
-    background: #FFFFFF;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
-    border-radius: 16px;
-}
+    .brigadeiro {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 31px;
+        
+        position: absolute;
+        width: 240px;
+        height: 240px;
+        left: 504px;
+        top: 259px;
+        
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+        border-radius: 16px;
+    }
 
-.brigadeiro {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 31px;
-    
-    position: absolute;
-    width: 240px;
-    height: 240px;
-    left: 504px;
-    top: 259px;
-    
-    background: #FFFFFF;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
-    border-radius: 16px;
-}
+    .tablito {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 31px;
+        
+        position: absolute;
+        width: 318px;
+        height: 512px;
+        left: 114px;
+        top: 259px;
+        
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+        border-radius: 16px;
+    }
 
-.tablito {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 31px;
-    
-    position: absolute;
-    width: 318px;
-    height: 512px;
-    left: 114px;
-    top: 259px;
-    
-    background: #FFFFFF;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
-    border-radius: 16px;
-}
-
+    /*alterações footer*/
     footer {
     display: flex;
     flex-direction: column;
