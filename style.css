@@ -120,7 +120,7 @@ body {
     width: 240px;
     height: 240px;
     left: 1086px;
-    top: 551px;
+    top: 561px;
 
     background: #FFFFFF;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
@@ -138,7 +138,7 @@ body {
     width: 240px;
     height: 240px;
     left: 1086px;
-    top: 279px;
+    top: 269px;
     
     background: #FFFFFF;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
@@ -155,7 +155,7 @@ body {
     position: absolute;
     width: 318px;
     height: 512px;
-    left: 736px;
+    left: 700px;
     top: 279px;
 
     background: #FFFFFF;
@@ -173,8 +173,8 @@ body {
     position: absolute;
     width: 240px;
     height: 240px;
-    left: 464px;
-    top: 551px;
+    left: 394px;
+    top: 561px;
     
     background: #FFFFFF;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
@@ -191,8 +191,8 @@ body {
     position: absolute;
     width: 240px;
     height: 240px;
-    left: 464px;
-    top: 279px;
+    left: 394px;
+    top: 269px;
     
     background: #FFFFFF;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
@@ -209,7 +209,7 @@ body {
     position: absolute;
     width: 318px;
     height: 512px;
-    left: 114px;
+    left: 14px;
     top: 279px;
     
     background: #FFFFFF;
@@ -335,7 +335,7 @@ footer {
     left: 0%;
     right: 0%;
     bottom: 0px;
-    margin-top: 90%;
+    margin-top: 1200px;
 
     background: #F2F2F2;
 }
@@ -385,7 +385,6 @@ footer {
 .twitter {
     width: 35px;
     height: 35px;
-    
     
     /* Inside auto layout */
     
@@ -447,4 +446,253 @@ footer {
     flex: none;
     order: 2;
     flex-grow: 0;
+}
+/*
+@media (max-width: 1400px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 48px 114px;
+        gap: 292px;
+    
+        position: relative;
+        min-width: 1400px;
+        max-width: 100%;
+        height: 15%;
+        left: 0%;
+        right: 0%;
+        bottom: 0px;
+        margin-top: 1100px;
+    
+        background: #F2F2F2;
+    }
+}*/
+
+@media (max-width: 650px) {
+    html {
+        height: 100%;
+        min-height: 100%;
+        width: 50%;
+    }
+
+    body {
+    display: flex;
+    position: relative;
+    width: 390px;
+    height: 920px;
+
+    background: #FAFAFA;
+    }
+
+    .searchfield {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 16px;
+
+    width: 36px;
+    height: 18%;
+    padding-right: 0px;
+
+    background: #FFFFFF;
+    border: 0.5px solid rgba(96, 96, 96, 0.3);
+    border-radius: 8px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    }
+
+    .text {
+        display: none;
+    }
+
+    .card {
+        position: relative;
+        width: 100px;
+        height: 200px;
+        left: 14px;
+        top: 159px;    
+    }
+
+
+.minion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 31px;
+
+    position: relative;
+    width: 240px;
+    height: 240px;
+    left: 116px;
+    top: 1138px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+}
+
+.morango {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 31px;
+    
+    position: relative;
+    width: 240px;
+    height: 240px;
+    left: 116px;
+    top: 554px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+}
+
+.chicabon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 31px;
+
+    position: relative;
+    width: 318px;
+    height: 512px;
+    left: 430px;
+    top: 289px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+}
+
+.azul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 31px;
+    
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    left: 504px;
+    top: 556px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+}
+
+.brigadeiro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 31px;
+    
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    left: 504px;
+    top: 259px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+}
+
+.tablito {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 31px;
+    
+    position: absolute;
+    width: 318px;
+    height: 512px;
+    left: 114px;
+    top: 259px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+}
+
+    footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 24px;
+
+    position: static;
+    min-width: 800px;
+    height: 128px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin-top: 1500px;
+
+    background: #F2F2F2;
+    }
+
+    .frame1 {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 15px;
+        padding-left: 85px;
+        margin-top: 0px;
+        
+        width: 253px;
+        height: 35px;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    .sorvetefooter {
+        display: none;
+    }
+
+    .textfooter {
+        position: relative;
+        margin-bottom: 0px;
+        width: 253px;
+        height: -100px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 0px;
+        /* identical to box height */
+        
+        
+        color: #707070;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+    }
 }
